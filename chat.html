@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+  <nav id="desktop-nav">
+        <div class="logo">Abhijit Mehakar</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+         </nav>
+         <nav id="hamburger-nav"> 
+            <div class="logo">Abhijit Mehakar</div>
+            <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+    </div>
+         </nav>
+         <section id="profile">
+            <div class="section__pic-container">
+                <img src="./asset/IMG-20230714-WA0000.png" alt="Abhijit profile pic"/>
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello I'm</p>
+                <h1 class="title">Abhijit Mehakar</h1>
+                <p class="section__text__p2">Software Developer</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./asset/Abhijit Mehakar.pdf')">
+                    Download CV</button>
+                    <button class="btn btn-color-1" >
+                    <a href="#contact" onclick="toggleMenu()"> Contact Info</a></button>
+
+                </div>
+                <div id="socials-container">
+                    <img src="./asset/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://linkedin.com/in/abhijit-mehakar-987481239'">
+                    
+                </div>
+            </div>
+
+         </section>
+         <section id="about">
+
+            <p class="section__text__p1">Get To Know More</p>
+            <h1 class="title">About Me</h1>
+            <div class="section-container">
+            <div class="section__pic-container">
+                 </div>
+                 <div class="about-details-container">
+                    <div class="about-containers">
+                        <div class="details-container">
+                            <img src="./asset/experience.png" alt="Experience icon" class="icon"/>
+                            <h3>Experience</h3>
+                            <p>Fresher</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./asset/education.png" alt="Education icon" class="icon"/>
+                            <h3>Education</h3>
+                            <p>BCA-Bachelor of Computer Application <br>
+                            MCA-Master of Computer Application
+                            </p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>
+                            Graduated with a Bachelor's Degree in a Computer Application and pursuing Master's Degree in Computer Application and a passion for building seamless and 
+functional user interfaces. Seeking a role to apply exceptional ability to switch 
+between programming languages, while working quickly and independently.
+                        </p>
+                    </div>
+                 </div>
+
+            </div>
+
+         </section>
+         <section id="skills">
+            <p class="section__text__p1">Explore My</p>
+            <h1 class="title">Skills</h1>
+            <div class="skills-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">FrontEnd</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                  
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                
+                                </div>
+                            </article>
+    
+                    
+                        </div>
+                        
+                    </div>
+                    <div class="details-container">
+                        <h2 class="skills-sub-title">Backend</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>SQL</h3>
+                                  
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>JAVA</h3>
+                                
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./asset/check mark.png" alt="skills icon" class="icon1"/>
+                                <div>
+                                    <h3>Software Testing</h3>
+                                
+                                </div>
+                           
+                    </div>
+                </div>
+            </div>
+         </section>
+         <section id="project">
+            <p class="section__text__p1">Browse My Recent</p>
+            <h1 class="title">Project</h1>
+                <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/loan project.png" alt="project1" class="project-img1"/>
+                    </div>
+                    <h2 class="project-sub-title project-title">Loan Management System</h2>
+                    <div class=btn-container>
+                        <p><b>Description:</b> The Application provide the access to checking list of clients, editing selected client,deleting, updating the information of selected client.
+                            
+                        </p>
+                      
+                        <p><b>Technology Used:</b>MySql, JAVA</p>
+                        
+                       
+                    </div>
+                    
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./asset/phone new.png" alt="project2" class="project-img2">
+                    </div>
+                    <h2 class="project-sub-title project-title">Smartphone Comparison System</h2>
+                    <div class=btn-container>
+                        <p><b>Description:</b>Smartphone Comparison Website helps to compare mobile phones by prices, specification and feature. It provides detailed comparison information about the phone's design, display, performance, processor, battery, camera and network connectivity.
+                            
+                        </p>
+                        <p><b>Technology Used:</b> PHP, HTML CSS, MySql</p>
+                        
+                    </div>
+                </div></div>
+            </div>
+
+         </section>
+         <section id="contact">
+            <p class="section__text__p1">Get In Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./asset/mail.png" alt="email" class="contact-icon1"/>
+                <p><a href="mailto:abhijeetmehakar18@gmail.com">abhijeetmehakar18@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./asset/phone.png" alt="phone" class="contact-icon2"/>
+                <p><a href="callto:+918459305747">+918459305747</a></p>
+            </div>
+        </div>
+         </section>
+         <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        
+                        <li><a href="#project">Project</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169;2024 Abhijit. All Right Reserved. </p>
+         </footer>
+    <script src="script.js"></script>  
+</body>
+</html>
